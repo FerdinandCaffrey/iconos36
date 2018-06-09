@@ -27,19 +27,38 @@ html {
 
   display: flex;
   /* Define el eje principal row - x, column - y */
-  flex-direction: row; /* row | row-reverse | column | column-reverse; */
+  /* row | row-reverse | column | column-reverse; */
+  flex-direction: row;
   /* Define si el contenedor envuelve o no sus items */
-  flex-wrap: wrap; /* nowrap | wrap | wrap-reverse */
+  /* nowrap | wrap | wrap-reverse */
+  flex-wrap: wrap;
   /* Define la alienación de los items en el eje principal */
-  justify-content: space-evenly; /* flex-start | flex-end | center | space-between | space-around | space-evenly */
-
+  /* flex-start | flex-end | center | space-between | space-around | space-evenly */
+  justify-content: space-evenly;
+  /* Define la alineación de los items en el eje transversal, si flexwrap: nowrap; */
+  /* stretch | flex-start | flex-end | center | baseline; */
+  align-items: stretch;
+  /* Define la alineación de los items en el eje transversal, si flexwrap: wrap | wrap-reverse; */
+  /* stretch | flex-start | flex-end | center | space-between | space-around | space-evenly */
+  align-content: space-evenly;
 }
 
 .item {
-  /* width: 20%; */
+  width: 15%;
   padding: 1rem;
   font-size: 2rem;
   background-color: var(--main-color);
   border: medium solid var(--border-color);
 }
 
+.item:nth-child(10) {
+  font-size: 4rem;
+  order: -1;
+}
+
+.item:last-child {
+  /* el elemento hijo no ansorbe el espacio sobrante valor por defecto */
+  flex: none;
+  /* el elemento hijo absorbe el espacio sobrante */
+  flex: auto;
+}
