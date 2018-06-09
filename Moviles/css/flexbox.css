@@ -1,0 +1,45 @@
+:root {
+  --main-color: #F5AAB2;
+  --second-color: #301114;
+  --border-color: #DE5C5C;
+}
+
+html {
+  font-size: 16px;
+  font-family: sans-serif;
+  line-height: 1.6;
+  box-sizing: border-box;
+}
+
+*,
+*::after,
+*::before {
+  box-sizing: inherit;
+}
+
+.container {
+  margin: 0 auto;
+  /* padding: 1rem; */
+  width: 80%;
+  height: 80vh;
+  background-color: var(--second-color);
+  border: medium solid var(--border-color);
+
+  display: flex;
+  /* Define el eje principal row - x, column - y */
+  flex-direction: row; /* row | row-reverse | column | column-reverse; */
+  /* Define si el contenedor envuelve o no sus items */
+  flex-wrap: wrap; /* nowrap | wrap | wrap-reverse */
+  /* Define la alienación de los items en el eje principal */
+  justify-content: space-evenly; /* flex-start | flex-end | center | space-between | space-around | space-evenly */
+
+}
+
+.item {
+  /* width: 20%; */
+  padding: 1rem;
+  font-size: 2rem;
+  background-color: var(--main-color);
+  border: medium solid var(--border-color);
+}
+
