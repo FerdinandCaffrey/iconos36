@@ -49,13 +49,9 @@ html {
 body { overflow-x: hidden; }
 
 a {
-  font-weight: bold;
   text-decoration: none;
-  color: var(--link-color);
-  transition: all .3s ease-out;
+  color: var(--text-color);
 }
-
-a:hover { color: var(--link-hover-color); }
 
 img, iframe, video, audio {
   max-width: 100%;
@@ -407,4 +403,39 @@ body {
   text-transform: uppercase;
   background-color: var(--category-color);
   color: var(--bg-alternate-color);
+}
+
+/* Match */
+.Match {
+  border-bottom: thin solid var(--bg-modal-color);
+}
+
+.Match-title {
+  padding: .5rem;
+  text-align: center;
+  text-transform: uppercase;
+  font-weight: normal;
+  font-size: 1rem;
+  background-color: var(--second-color);
+  color: var(--bg-alternate-color);
+}
+
+.Match a {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.Match p {
+  font-weight: bold;
+  font-size: 2rem;
+}
+
+.Match span {
+  text-decoration: underline;
+}
+
+.Country {
+  text-align: center;
+  transform: scale(.75);
 }
