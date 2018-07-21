@@ -16,6 +16,8 @@
 * Benjamin - benja.kalashlikov@gmail.com
 * Fernando - gallardo.guzman@hotmail.com
 
+## Entrega Móviles + WordPress: 06-Ago-2018.
+
 ## Materias: Sábados 12-16hrs:
 
 1. **Sitios web dinámicos con MySQL y PHP** (03-feb al 03-mar).
