@@ -103,7 +103,7 @@ li {
   z-index: 999;
 }
 
-.Logo  a {
+.Logo a {
   color: var(--main-color);
   font-size: 2rem;
 }
@@ -233,6 +233,7 @@ li {
   padding-left: 3rem;
   font-size: 120%;
 }
+
 .sub-menu .sub-menu a {
   padding-left: 6rem;
   font-size: 100%;
